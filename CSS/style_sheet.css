@@ -1,0 +1,512 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 238, 127);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+
+header {
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+    display: flex;
+    position: sticky;
+    top: 0%;
+}
+
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 23px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover {
+    color: rgb(203, 203, 203);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.459)),url(../images/shutterstock-252338818.jpg);
+    min-height: 50px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    object-fit: contain;
+    padding-bottom: 70px;
+}
+
+.hero h1, .hero p {
+    margin-bottom: 40px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(43, 226, 226, 0.725);
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+#gallery {
+    background-color: aqua;
+    color: rgb(251, 58, 123);
+    text-align: center;
+    padding-top: 15px;
+}
+
+#gallery img  {
+    width: 300px;
+    height: 175px;
+    object-fit: contain;
+}
+
+footer {
+    padding-bottom: 30px;
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+
+#features {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#features img {
+    width: 400px;
+    height: 275px;
+}
+
+#features p {
+    padding: 0px 150px;
+}
+
+#features li {
+list-style-type: none;
+}
+
+#features ul {
+    margin-right: 30px;
+}
+
+#subscribe h4, #subscribe p {
+    margin-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.flex-container div {
+    flex: 1;
+    padding: 10px;
+    border-radius: 2px;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 30px 80px;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.flex-container a:hover {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 200px 200px ;
+    margin-left: 230px;
+}
+
+.flex-container-two {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+}
+
+.flex-container-two div {
+    padding: 10px;
+    border-radius: 2px;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#subscribe button {
+    padding: 10px 18px;
+    margin-left: 20px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 3px;
+    border: black 1px solid;
+    text-decoration: none;
+}
+
+#subscribe button:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+#subscribe {
+    padding-bottom: 30px;
+}
+
+#subscribe a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.flex-container img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3,
+h4,
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+p {
+    font-size:20px;
+}
+
+/* Phone Screens */
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 330px;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        margin-left: 53px;
+    }
+
+    #gallery img  {
+        width: 400px;
+        height: 225px;
+        object-fit: contain;
+    }
+
+    #menu-toggle {
+        display:inline-block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 15px;
+    }
+
+    button {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px 15px;
+        font-size: 25px;
+    }
+
+    #features p {
+        padding: 0px 50px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container-two {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #subscribe {
+        text-align: center;
+        align-items: center;
+    }
+
+    #subscribe h4, #subscribe p {
+        margin-right: 10px;
+    }
+
+    #subscribe button {
+        margin-right: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #menu-toggle a:hover {
+        background-color: rgb(203, 203, 203);
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px;
+    }
+
+    #menu a {
+        color: rgb(33, 33, 33);
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    input {
+        padding: 30px 100px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+    
+    #subscribe button {
+        padding: 20px 58px;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+h3,
+h4,
+h5 {
+    font-size: 40px;
+}
+
+.flex-container a {
+ padding: 50px 130px;
+ font-size: 20px;
+}
+
+footer .flex-container {
+    gap: 50px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.flex-container img {
+    width: 60px;
+    height: 60px;
+}
+
+label {
+    font-size: 22px;
+}
+
+}
+
+/* Tablet Screens */
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+    .grid-container {
+        margin-left: 50px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 330px 330px ;
+        grid-template-rows: 200px 200px 200px;
+        padding-left: 140px;
+    }
+    
+    #features p {
+        padding: 0px 30px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    input {
+        padding: 20px 30px;
+        font-size: 30px;
+    }
+
+    #subscribe button {
+        padding: 20px 68px;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    footer .flex-container {
+        display: grid;
+        grid-template-columns: 400px 400px ;
+        grid-template-rows: 150px 150px;
+        flex: 1;
+        margin-left: 95px;
+
+    }
+
+    .flex-container a {
+        padding: 50px 100px;
+        font-size: 20px;
+    }
+
+    .flex-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+}
+
+/* Large desktops */
+@media screen and (min-width: 1600px) {
+    header {
+        padding: 30px;      
+    }
+
+    #menu {
+        font-size: 25px;
+        gap: 50px;
+    }
+
+    #features img {
+        width: 600px;
+        height: 375px;
+    }
+
+    .grid-container {
+        margin-left: 175px;
+        grid-template-columns: 430px 430px 430px;
+        grid-template-rows: 300px 300px ;
+    }
+
+    #gallery img  {
+        width: 400px;
+        height: 275px;
+    }
+
+    .flex-container a {
+        padding: 50px 100px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    footer .flex-container {
+        margin-left: 35px;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    .hero p {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+h3,
+h4,
+h5 {
+    font-size: 45px;
+}
+
+h6 {
+    font-size: 35px;
+}
+
+#features {
+    padding-bottom: 40px;
+}
+
+#gallery {
+    padding-bottom: 40px;
+}
+
+input {
+    padding: 30px 100px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 35px;
+}
+
+label {
+    font-size: 30px;
+}
+
+#subscribe button {
+    padding: 20px 58px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+}
